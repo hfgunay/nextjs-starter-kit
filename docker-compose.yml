@@ -1,0 +1,15 @@
+services:
+  flexaigenerator:
+    image: postgres
+    restart: always
+    container_name: flexaigenerator
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+
+volumes:
+  postgres:

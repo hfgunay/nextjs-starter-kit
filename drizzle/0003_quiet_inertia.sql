@@ -1,0 +1,1 @@
+ALTER TABLE "fa_generated_images" ALTER COLUMN "style" SET DEFAULT 'realistic';

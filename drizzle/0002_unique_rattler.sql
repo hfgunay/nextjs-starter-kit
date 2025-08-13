@@ -1,0 +1,1 @@
+ALTER TABLE "fa_generated_images" ADD COLUMN "style" text NOT NULL;
